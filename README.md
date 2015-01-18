@@ -8,13 +8,13 @@ npm install bower -g
 
 ローカルに必要なライブラリをインストール
 
-bower install
+bower install  
 npm install
 
 その後、下記などで実行
 
 gulp clean-dev
 
-主に参考にしたのは下記
-https://github.com/jakemmarsh/angularjs-gulp-browserify-boilerplate
-http://int128.hatenablog.com/entry/2014/07/02/004543
+主に参考にしたのは下記  
+https://github.com/jakemmarsh/angularjs-gulp-browserify-boilerplate  
+http://int128.hatenablog.com/entry/2014/07/02/004543  
