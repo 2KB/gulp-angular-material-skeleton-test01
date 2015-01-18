@@ -1,0 +1,54 @@
+{{home.title}}
+
+<md-content> 
+<div layout="row" layout-margin>
+  <div flex flex-order="3">
+	<md-card>
+		<h2>gulp</h2>
+		<a href="/detail"><img src="img/gulp.png"></a>
+		<p>testtest</p>
+		<md-button class="md-raised md-warn">Warn</md-button>
+	</md-card> 
+  </div>
+  <div flex flex-order="2">
+	<md-card>
+		<h2>browserify</h2>
+		<a href="/detail"><img src="img/browserify.png"></a>
+		<p>testtest</p>
+		<md-button class="md-raised md-primary">Primary</md-button>
+	</md-card> 
+  </div>
+  <div flex flex-order="1">
+	<md-card>
+		<h2>angular</h2>
+		<a href="/detail"><img src="img/angular.png"></a>
+		<p>testtest</p>
+		<md-button class="md-raised">Button</md-button>
+	</md-card> 
+  </div>
+</div>
+
+<hr>
+Directiveテスト：<br>
+<example-directive></example-directive>
+
+<hr>
+Serviceテスト:<br>
+  <md-list>
+    <md-item ng-repeat="item in home.serviceData.result">
+      <md-item-content>
+        <div class="md-tile-left">
+            <img ng-src="{{item.face}}" class="face" alt="{{item.who}}">
+        </div>
+        <div class="md-tile-content">
+          <h3>{{item.what}}</h3>
+          <h4>{{item.who}}</h4>
+          <p>
+            {{item.notes}}
+          </p>
+        </div>
+      </md-item-content>
+    </md-item>
+    </md-list>
+    
+</md-content>

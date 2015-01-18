@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<base href="/">
+<meta charset="utf-8">
+<title ng-bind="pageTitle"></title>
+
+<link rel="stylesheet" href="lib.css">
+<link rel="stylesheet" href="app.css">
+<script src="lib.js"></script>
+<script src="app.js"></script>
+
+</head>
+<body>
+	<div layout="column" layout-fill>
+		<div ui-view="headView"></div>
+		<div ui-view="mainView"></div>
+	</div>
+</body>
+</html>
